@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal eCommerce PUC-MINAS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <img
+      src="/imgs/logo.png"
+      class="navbar-brand" href="#" style="height: 100px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid collapse navbar-collapse" id="navbarNav">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <span class="navbar-text mr-3 m-2 text-primary">Bem-vindo, User</span>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Pesquisar">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary text-primary" type="submit">Pesquisar</button>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-primary" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#">Sobre</a>
+        </li>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+ <!--Quick Search and Carousel-->   
+  <div class="container bg-dark" id="row">
+    <div class="row">
+      <div class="col-12 col-md-4 mx-auto col-lg-2" id="search">
+        <form class="form-inline bg-dark">
+          <div class="form-row">
+            <div class="col-md-3 col-lg-5 mx-5">
+              <label for="search-type" class="col-form-label text-info">Tipo:</label>
+              <select class="form-control" id="search-type">
+                <option value="">Nenhum</option>
+                <option value="type1">Console</option>
+                <option value="type2">Android</option>
+                <option value="type3">PC</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-lg-5 mx-5">
+              <label for="search-brand" class="col-form-label text-info">Marca:</label>
+              <select class="form-control" id="search-brand">
+                <option value="">Nenhum</option>
+                <option value="brand1">Xbox</option>
+                <option value="brand2">Playstation</option>
+                <option value="brand3">GameSir</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-lg-5 mx-5">
+              <label for="search-category" class="col-form-label text-info">Categoria:</label>
+              <select class="form-control" id="search-category">
+                <option value="">Nenhum</option>
+                <option value="category1">Acessorios</option>
+                <option value="category2">Console</option>
+                <option value="category3">Proteção</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-lg-5 mx-5">
+              <label for="search-value" class="col-form-label text-info">Valor:</label>
+              <input type="text" class="form-control" id="search-value" placeholder="Coloque o Valor">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mt-2 mx-5">Buscar</button>
+        </form>
+      </div>
+      <div class="col-md-8 d-flex">
+        <div id="mycarousel" class="carousel carousel-dark slide pb-4 col-12 col-md-6 col-lg-8" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imgs/ps5.jpg" class="d-flex border rounded-5"
+                        alt="Carousel1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://files.tecnoblog.net/wp-content/uploads/2017/08/xbox-one-x-project-scorpio-700x438.jpg" class="d-flex border rounded-5"
+                        alt="Carousel2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://c0.wallpaperflare.com/preview/1011/987/583/black-nintendo-switch.jpg" class="d-flex border rounded-5"
+                        alt="Carousel3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>    
+    </div>
+  </div>
+<!--Cards-->
+<div class="d-flex">
+  <div class="container-fluid w-80">
+    <div class="row cards-row">
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://psxbrasil.com.br/wp-content/uploads/2021/12/PS5-Placas-696x392.jpg" alt="Produto1" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">TAMPAS PARA PLAYSTATION 5</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+              </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star text-primary"> 4.0 (70 avaliações)</i>
+                <!--<p class="card-subtitle mt-3 text-success">4.0 (70 avaliações)</p> -->
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 298,50</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://sm.ign.com/ign_br/screenshot/default/dualsense-black_zb8f.jpg" alt="Produto2" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">CONTROLE PS5 ALL BLACK</h5><br>
+            <a href=""><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-half text-primary"> 4.5 (123 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 399,99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/Midnight_Black_Pulse_3D_black_PS5_concept_drdNBC.jpg" alt="Produto3" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">FONE SONY PRETO</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-half text-primary"></i>
+                <i class="bi bi-star text-primary"> 3.5 (95 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 499.99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://t2.tudocdn.net/602845?w=1920" alt="Produto4" class="card-img-top img-fluid w-100 " id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">CAPAS CONTROLE PLAYSTATION 5</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star text-primary"></i>
+                <i class="bi bi-star text-primary"> 3.0 (253 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 39.99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://s2.glbimg.com/WM_jN0LiFTvZbwf6oIswB0WzzCE=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/9/b/vkLphMRaOX8NnPZFaEHQ/xbox-series-x-joystick-pilha.jpg" alt="Produto5" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">Console XBOX ONE ALL BLACK</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star text-primary"> 4.0 (52 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 4799.99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://assets.xboxservices.com/assets/b8/df/b8df747c-1bca-41ef-830d-e0c8be2c9b39.jpg?n=111101_Feature-0_Compatibility_1040x700.jpg" alt="Produto6" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">CONTROLE XBOX ONE ALL BLACK</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"> 5.0 (300 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 449.99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://assets.xboxservices.com/assets/56/55/56555cfb-f565-4739-bfcc-7a7cde429a15.jpg?n=2100499_gallery_3_1056x594.jpg" alt="Produto7" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">FONE SEM FIO XBOX ONE</h5><br>
+            <a href="#"><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-half text-primary"></i>
+                <i class="bi bi-star text-primary"></i>
+                <i class="bi bi-star text-primary"> 2.5 (21 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 359.99</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card bg-dark border rounded-5 h-100 d-flex flex-column ">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdYcYfO8EhueovLyROZg7kss9YMdYkhV0Mg&usqp=CAU" alt="Produto8" class="card-img-top img-fluid w-100" id="img-card">
+          <div class="card-body">
+            <h5 class="card-title text-info text-center">GAMESIR X2 CONTROLE XBOX/ANDROID</h5><br>
+            <a href=""><p class="card-text text-primary-emphasis">DESCRIÇÃO</p>
+              </a>
+            <div class="d-flex align-items-center">
+              <span class="">
+                <br>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-fill text-primary"></i>
+                <i class="bi bi-star-half text-primary"> 4.5 (520 avaliações)</i>
+              </span>
+            </div>
+            <br>
+            <h6 class="card-subtitle mt-3 mb-3 text-success">R$ 329.00</h6>
+            <a href="#" class="btn btn-primary stretched-link">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Most ReviewdItems and Newsletter -->
+  <div class="row justify-content-start flex-column align-items-end w-20 ">
+    <div class="col-md-4 col-lg-2 col-sm-8 w-100">
+      <div class="card bg-dark border rounded-4 h-100">
+        <div class="card-body ">
+          <h5 class="card-title text-info text-center">Itens mais vistos</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark">
+              <div class="row align-items-center">
+                  <div class="col-md-6 col-lg-8">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdYcYfO8EhueovLyROZg7kss9YMdYkhV0Mg&usqp=CAU" alt="Item1" class="card-img-top mb-2 border rounded-4 img-fluid w-100" id="img-item">
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-md-end">
+                      <div>
+                        <a href="">
+                          <h6 class="card-subtitle mb-2 text-primary">Descrição do Produto</h6>
+                        </a>
+                        <span class="">
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-half text-primary"></i><br>
+                          <i class="card-subtitle text-primary">4.5 (520 avaliações)</i>
+                        </span>
+                          <p class="card-text text-primary">Preço: R$ 329,00</p>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          <li class="list-group-item bg-dark">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <img src="https://assets.xboxservices.com/assets/b8/df/b8df747c-1bca-41ef-830d-e0c8be2c9b39.jpg?n=111101_Feature-0_Compatibility_1040x700.jpg" alt="Item2" class="card-img-top mb-2 border rounded-4 img-fluid w-100" id="img-item">
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-md-end">
+                    <div>
+                      <a href="">
+                        <h6 class="card-subtitle mb-2 text-primary">Descrição do Produto</h6>
+                      </a>
+                      <span class="">
+                        <i class="bi bi-star-fill text-primary"></i>
+                        <i class="bi bi-star-fill text-primary"></i>
+                        <i class="bi bi-star-fill text-primary"></i>
+                        <i class="bi bi-star-fill text-primary"></i>
+                        <i class="bi bi-star-fill text-primary"></i><br>
+                        <i class="card-subtitle text-primary">5.0 (300 avaliações)</i>
+                      </span>
+                        <p class="card-text text-primary">Preço: R$ 449,99</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item bg-dark">
+          <div class="row align-items-center">
+              <div class="col-md-6 col-lg-8">
+                  <img src="https://t2.tudocdn.net/602845?w=1920" alt="Item3" class="card-img-top mb-2 border rounded-4 img-fluid w-100" id="img-item">
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-md-end">
+                  <div>
+                    <a href="">
+                      <h6 class="card-subtitle mb-2 text-primary">Descrição do Produto</h6>
+                    </a>
+                    <span class="">
+                      <i class="bi bi-star-fill text-primary"></i>
+                      <i class="bi bi-star-fill text-primary"></i>
+                      <i class="bi bi-star-fill text-primary"></i>
+                      <i class="bi bi-star text-primary"></i>
+                      <i class="bi bi-star text-primary"></i><br>
+                      <i class="card-subtitle text-primary">3.0 (253 avaliações)</i>
+                    </span>
+                      <p class="card-text text-primary">Preço: R$ 39,99</p>
+                  </div>
+              </div>
+          </div>
+      </li>
+            <li class="list-group-item bg-dark">
+              <div class="row align-items-center">
+                  <div class="col-md-6 col-lg-8">
+                      <img src="https://sm.ign.com/ign_br/screenshot/default/dualsense-black_zb8f.jpg" alt="Item4" class="card-img-top mb-2 border rounded-4 img-fluid w-100" id="img-item">
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-md-end">
+                      <div>
+                        <a href="">
+                          <h6 class="card-subtitle mb-2 text-primary">Descrição do Produto</h6>
+                        </a>
+                        <span class="">
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-fill text-primary"></i>
+                          <i class="bi bi-star-half text-primary"></i><br>
+                          <i class="card-subtitle text-primary">4.5 (123 avaliações)</i>
+                        </span>
+                          <p class="card-text text-primary">Preço: R$ 399,99</p>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 w-100">
+      <div class="card bg-dark border rounded-4 h-100">
+        <div class="card-body">
+          <h5 class="card-title text-white">Receber Noticias</h5>
+          <form>
+            <div class="form-group">
+              <label for="newsletterEmail" class="text-white">Endereço de email</label>
+              <input type="email" class="form-control" id="newsletterEmail" aria-describedby="emailHelp"
+                placeholder="Envie o email">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<footer class="bg-dark text-white">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-4 text-info">Formas de Pagamento</h5>
+        <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" alt="PayPal"
+          class="img-fluid mt-3" style="max-width: 200px;">
+
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-4 text-info">Redes Sociais</h5>
+        <ul class="list-unstyled d-flex ">
+          <li>
+            <a href="https://instagram.com">
+              <img
+                src="/imgs/instagram.png"
+                alt="Instagram" class="img-fluid" style="max-height: 30px" id="insta">
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com">
+              <img src="/imgs/facebook.png" alt="Facebook" class="img-fluid" style="max-height: 30px">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <img src="/imgs/twitter.png" alt="Twitter" class="img-fluid" style="max-height: 30px" id="twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-4 text-info">Contato</h5>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-map-marker"></i> Endereço: Av. Exemplo, 123 - Belo Horizonte, MG</li>
+          <li><i class="fa fa-phone"></i> Telefone: (31) 1234-5678</li>
+          <li><i class="fa fa-envelope"></i> Email: contato@exemplo.com.br</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark text-center py-3">
+    <p class="mb-0">© 2023 Todos os direitos reservados. Desenvolvido por <a href="#">Bruno Lopes</a>.</p>
+  </div>
+</footer>
+
+
+</html>
